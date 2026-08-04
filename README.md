@@ -1,7 +1,9 @@
-#AüMTRöN SYSTEM: Treadle
+# AüMTRöN SYSTEM: Treadle
 
-The AüMTRöN Treadle is a dedicated, high-performance hardware expression console that acts as a real-time analog-to-MIDI performance bridge. Rather than a general-purpose processor, the hardware was explicitly designed for the Roland RPU-3 piano foot pedal and this core performance functionality.
+The AüMTRöN Treadle is a dedicated, high-performance expression controller that acts as a real-time analog-to-MIDI performance bridge.
 
-Many features planned: envelopes, lfos, presets.
+It is purpose-built around the Roland RPU-3 triple piano pedal, transforming its continuous analogue outputs into expressive MIDI control data with minimal latency and predictable behaviour. Rather than being a general-purpose controller, Treadle is designed to provide a dedicated performance interface for foot-based musical expression.
 
-*This repository is currently in the architecture and documentation phase.*
+Planned features include configurable envelopes, LFOs, presets, calibration tools, and flexible MIDI mapping.
+
+This repository is currently focused on architecture, documentation, and firmware development.

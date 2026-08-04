@@ -1,7 +1,11 @@
 1. HARDWARE: 6.35" jacks: In normal use this is NOT an issue, however it should be documented...
 
-When ordering the components I did not understand about breadboarded jack sockets isolating themselves to ground (or whatever the proper term is). When providing power to the RPU-3 this is no issue. Unfortunately it turns out in my use case, with no RPU-3 connected, or when I pull out the jack plug for any reason, the 3.3v line gets immediately grounded (?) which causes some kind of short, and the Pico does some safety thing and powers off (or something).
+When ordering the components I did not understand about breadboarded jack sockets isolating themselves to ground (the proper term is "switched (normally-closed)"). When applying power via the jack sockets to the RPU-3 this is no issue. Unfortunately it turns out in my use case, when no RPU-3 is connected, or the jack is unplugged, the Pico immediately powers down.
 
-When I realised this fact, I immediately rectified it by bending the middle (ring) contact spring up slightly, which prevents the spring resting on the other side contact. However I did not consider spring bounce, and it occasionally happens when the jack is pulled quickly.
+Investigation showed that the switched contacts inside the jack socket connect the 3.3 V line to another contact when no plug is inserted, effectively shorting the supply.
 
-The fix is simple: Cover the opposite contacts entirely with tape or some hot glue. I will update this issue when it's fixed :D
+As a temporary fix I bent the normally-closed spring contact away from its mating contact. This works, but because the contact can still bounce while the plug is being removed, brief shorts can still occur.
+
+Planned permanent fix: insulate the unused switched contact with Kapton tape or hot glue, or replace the socket with a non-switched jack if appropriate.
+
+I will update this issue when it's fixed :D
