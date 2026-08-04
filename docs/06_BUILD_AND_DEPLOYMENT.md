@@ -1,4 +1,4 @@
-# AuMTRoN SYSTEM — Build and Deployment
+# Treadle — Build and Deployment
 
 ## Hardware
 
@@ -16,7 +16,7 @@ IDE:
 - Arduino IDE 2.3.10
 
 Required libraries:
-- Arduino Wire (Wire.h)
+- None currently or planned
 
 ---
 
@@ -60,7 +60,7 @@ Board:
 rpipico2w
 
 Board core:
-rp2040
+rp2040 (Earl Philhower's arduino-pico)
 
 OS:
 Win10 x64

@@ -4,29 +4,29 @@
 
 ### Overview
 
-This is the initial proof-of-concept hardware used to validate the firmware and hardware architecture.
+This is the final hardware used to validate the firmware and hardware architecture.
 
-The construction is intentionally experimental and should not be considered representative of future revisions.
+The construction was experimental and future projects will not use such adhoc methods.
 
 ### Photographs
 
-#### 1_early_crop.jpg
+#### 1_early_crop.JPG
 
 Overall view of the assembled prototype without its clothes.
 
-#### 2_top.jpg
+#### 2_top.JPG
 
 Birds eye of the front of the unit, showing the screen, encoder and DYMO labelling (previous name) in all its glory.
 
-#### 3_side.jpg
+#### 3_side.JPG
 
 Depicts the USB B connector to the host.
 
-#### 4_back.jpg
+#### 4_back.JPG
 
 The 3 jacks where the RPU-3's cables plug into.
 
-#### 5_da_gutz.jpg
+#### 5_da_gutz.JPG
 
 Internal wiring. Such as it is.
 

@@ -1,8 +1,8 @@
 // --- Treadle v0.024 ---------------------------------------------------------------
-// AüMTRöN Treadle Platform Architecture Specification
+// AüMTRöN SYSTEM Treadle Platform Architecture Specification
 // Hardware Environment: Dual-Core RP2040 (ARM Cortex-M0+)
 // Display Matrix: 16x2 ST7032 Text LCD (Japanese/English Character ROM Variant) via I2C1.
-// The AüMTRöN Treadle is a dedicated, high-performance hardware expression console that acts
+// The AüMTRöN SYSTEM Treadle is a dedicated, high-performance hardware expression console that acts
 // as a real-time analog-to-MIDI performance bridge. Rather than a general-purpose processor,
 // the hardware was explicitly designed for this core performance functionality.
 // ----------------------------------------------------------------------------------
@@ -354,9 +354,9 @@ void drawTelemetryMatrix() {
   }
 }
 // --- ATTACH INDEPENDENT REGS EXTENSION BLOCK -------------------------------------
-// Pasting 'selekta.h' at the bottom of the script guarantees the compiler 
+// Pasting 'selekta.cpp' at the bottom of the script guarantees the compiler 
 // initializes main Treadle hardware states, commands, and structures first.
-#include "selekta.h"
+#include "src\selekta.cpp"
 
 // --- SETUP ENGINE -----------------------------------------------------------------
 void setup() {
