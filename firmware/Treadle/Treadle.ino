@@ -356,20 +356,22 @@ void drawTelemetryMatrix() {
 // --- ATTACH INDEPENDENT REGS EXTENSION BLOCK -------------------------------------
 // Pasting 'selekta.cpp' at the bottom of the script guarantees the compiler 
 // initializes main Treadle hardware states, commands, and structures first.
-#include "src\selekta.cpp"
+//#include "src\selekta.cpp"
 
 // --- SETUP ENGINE -----------------------------------------------------------------
 void setup() {
   // --- MASTER SOFTWARE REBOOT ROUTER GATEWAY ---
   // This check intercepts execution before ANY splash screens or hardware pins are set.
   // If a sub-module requested a hot-swap boot, it intercepts right here.
-  if (shared_nextModuleBootTarget == 0x01) {
+/*  if (shared_nextModuleBootTarget == 0x01) {
     shared_nextModuleBootTarget = 0x00; // Clear the flag instantly to prevent infinite loops
     setupRGBSelekta();
     while (1) {
       loopRGBSelekta();
     }
-  }
+  } */
+
+
   // --- FUTURE MODULE INTERCEPT SLOTS ---
   // else if (shared_nextModuleBootTarget == 0x02) {
   //   shared_nextModuleBootTarget = 0x00;
@@ -412,9 +414,9 @@ void setup() {
   // --- HARDWARE PEDAL INTERCEPT GATEWAY (COLD BOOT ROUTER) ---
   // If Middle Pedal is held down during a cold physical power-on, drop cleanly into Selekta
   if (stablePedalValue2 > 500) {
-    setupRGBSelekta();
+   // setupRGBSelekta();
     while (1) {
-      loopRGBSelekta();
+     // loopRGBSelekta();
     }
   }
 
