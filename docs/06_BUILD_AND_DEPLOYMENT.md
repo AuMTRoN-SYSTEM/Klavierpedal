@@ -23,7 +23,7 @@ Required libraries:
 ## Build Procedure
 
 1. Open:
-   - `firmware/AuMTRoN_SYSTEM/AuMTRoN_SYSTEM.ino`
+   - `firmware/Treadle/Treadle.ino`
 2. *DISABLE* serial monitor if active. (Causes problems with firmware upload)
 3. Compile/Verify.
 4. Upload firmware.
