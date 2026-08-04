@@ -6,6 +6,6 @@ Investigation showed that the switched contacts inside the jack socket connect t
 
 As a temporary fix I bent the normally-closed spring contact away from its mating contact. This works, but because the contact can still bounce while the plug is being removed, brief shorts can still occur.
 
-Planned permanent fix: insulate the unused switched contact with Kapton tape or hot glue, or replace the socket with a non-switched jack if appropriate.
+Planned permanent fix: insulate the unused switched contact with tape or hot glue.
 
 I will update this issue when it's fixed :D
