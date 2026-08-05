@@ -2,7 +2,7 @@
 
 1. Design Philosophy
 
-Single-purpose firmware.
+The overriding function of the software has a single purpose (convert RPU-3 to MIDI).
 
 The firmware is developed using the Arduino-Pico core by Earle Philhower, providing access to the RP2350 hardware through the Arduino framework.
 
@@ -17,6 +17,8 @@ No dynamic memory allocation.
 Modular components.
 
 Easy to extend.
+
+However, the firmware has a secondary function. It can host other "Modules"; self contained programs that can utilise the hardware platform. For instance: I can hold the encoder down, or the middle pedal, to boot another module. This way the main Klavierpedal part of the firmware stays indepdent, and everything is also built at once.
 
 2. System Components
 
@@ -100,11 +102,6 @@ Presets.
 
 6. Future Expansion
 
-envelopes
-
-LFOs
+presets
 
 alternate controller modes
-
-scripting (if you ever go there)
-

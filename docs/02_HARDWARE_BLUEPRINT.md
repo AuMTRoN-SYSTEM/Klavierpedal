@@ -10,7 +10,7 @@ The Pico 2 W is responsible for:
 - Processing pedal movement and calibration.
 - Managing the user interface (LCD, rotary encoder and push switch).
 - Generating MIDI messages over USB (planned).
-- Hosting future performance features such as presets, envelopes and LFOs.
+- Hosting future performance features such as presets.
 
 The design is assembled using DuPont point-to-point wiring and a small breadboard power strip.
 
@@ -79,5 +79,4 @@ HW-10: Small plastic enclosure.
 PD-01: Standard Breakaway Male Pin Headers (Logged for future circuit coupling builds)	
 
 ##Known Hardware Notes##
-There is a short circuit problem with the jacks I selected for the project. They are switched (normally-closed),
-which is not the type I should have bought. See KNOWN_ISSUES.md
+There is a short circuit problem with the jacks I selected for the project. They are switched (normally-closed), which is not the type I should have bought. See KNOWN_ISSUES.md. :)

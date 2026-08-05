@@ -24,7 +24,6 @@ Required libraries:
 
 1. Open:
    - `firmware/Klavierpedal/Klavierpedal.ino`
-2. *DISABLE* serial monitor if active. (Causes problems with firmware upload)
 3. Compile/Verify.
 4. Upload firmware.
 
@@ -35,7 +34,7 @@ Required libraries:
 ## Upload Procedure
 
 1. Connect RP2350 board via USB.
-2. Enter bootloader mode if required.
+2. *DISABLE* serial monitor if active. (Causes problems with firmware upload)
 3. Upload using Arduino IDE.
 4. Confirm successful deployment.
 

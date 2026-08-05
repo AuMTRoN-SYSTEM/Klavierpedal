@@ -2,7 +2,7 @@
 
 ## History
 
-I've been a hobbyist programmer for around 40 years.
+I've been a hobbyist programmer for around 40 years. I'm also a musician.
 
 Over that time I've worked on several platforms, including:
 
