@@ -5,14 +5,10 @@
 - Target: RP2350 board
 - Current board package: RPI Pico2w
 
----
-
 ## Development Environment
 
 - IDE: Arduino IDE 2.3.10
 - Required libraries: None currently or planned
-
----
 
 ## Build and Upload Procedure
 
@@ -22,8 +18,6 @@
 - Compile/Verify.
 - Upload firmware via Arduino IDE. (One-step process with Compile step, by default)
 - Confirm successful deployment.
-
----
 
 ## Known Issues / Notes
 
