@@ -19,11 +19,6 @@
 - Upload firmware via Arduino IDE. (One-step process with Compile step, by default)
 - Confirm successful deployment.
 
-## Known Issues / Notes
-
-- [2026-08-04] Initial documentation created.
-- Avoid pasting very large source files into external AI tools without preserving local copies first.
-
 ## Environment Snapshot
 
 Known working configuration:
