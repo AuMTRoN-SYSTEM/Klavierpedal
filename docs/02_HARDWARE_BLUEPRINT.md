@@ -44,6 +44,7 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
 ##Encoder Wiring
 
             Enc. side                   Switch side
+            
                       ┌───────────────┐
     (Pico pin 5) RED ─┤ 1 DT   LINE 5 ├─ ORG (Pico pin 19)
     (Pico pin 3) YEL ─┤ 2 GND         │
@@ -52,29 +53,29 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
 
 ##Screen Wiring
 
-Uses 4 pin header connector.
+    Uses 4 pin header connector.
 
-  GRN - 5v power > PIN 40
-  PUR - GND > PIN 38
-  BLU - LCD Data > PIN 1
-  YEL - LCD Clock > PIN 2
-
+    GRN - 5v power > PIN 40
+    PUR - GND > PIN 38
+    BLU - LCD Data > PIN 1
+    YEL - LCD Clock > PIN 2
+  
 ##Hardware Inventory
 
-  HW-01: Raspberry Pi Pico 2 W (Main Controller).
-  HW-02: Waveshare RGB1602 LCD I2C Character Display (Text at 0x3E, RGB at 0x60).
-  HW-03: Continuous Rotary Encoder Parameter Dial
-  HW-04: Shaft Push-Button Interrupt Switch (Built into encoder center-click).
-  HW-05: 6.35mm Jack Socket 1 (Right Pedal / Damper Sustain).
-  HW-06: 6.35mm Jack Socket 2 (Middle Pedal / Sostenuto Hold).
-  HW-07: 6.35mm Jack Socket 3 (Left Pedal / Una Corda Soft).
-  HW-08: Several DuPont wires
-  HW-09: Panel-Mount USB Extender (Chassis strain relief link).
-  HW-10: Small plastic enclosure.
+    HW-01: Raspberry Pi Pico 2 W (Main Controller).
+    HW-02: Waveshare RGB1602 LCD I2C Character Display (Text at 0x3E, RGB at 0x60).
+    HW-03: Continuous Rotary Encoder Parameter Dial
+    HW-04: Shaft Push-Button Interrupt Switch (Built into encoder center-click).
+    HW-05: 6.35mm Jack Socket 1 (Right Pedal / Damper Sustain).
+    HW-06: 6.35mm Jack Socket 2 (Middle Pedal / Sostenuto Hold).
+    HW-07: 6.35mm Jack Socket 3 (Left Pedal / Una Corda Soft).
+    HW-08: Several DuPont wires
+    HW-09: Panel-Mount USB Extender (Chassis strain relief link).
+    HW-10: Small plastic enclosure.
 
 ##Pending Workspace Acquisitions
 
-  PD-01: Standard Breakaway Male Pin Headers (Logged for future circuit coupling builds)
+    PD-01: Standard Breakaway Male Pin Headers (Logged for future circuit coupling builds)
 
 ##Known Hardware Notes
 
