@@ -16,42 +16,40 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
 
 ## Pinout Diagram
 
-                            TOP / USB PORT
-                        ┌───────────────────┐
-        (LCD Data) YEL ─┤ 1  GP0     VBUS 40├─ GRN (LCD Backlight 5V)
-       (LCD Clock) BLU ─┤ 2  GP1     VSYS 39├─ [OPEN]d
-     (Encoder GND) YEL ─┤ 3  GND      GND 38├─ PUR (LCD Backlight GND)
-     (Encoder CLK) GRN ─┤ 4  GP2   3V3_EN 37├─ [OPEN]
-      (Encoder DT) RED ─┤ 5  GP3  3V3_OUT 36├─ ORG (Power Rail 3.3V)
-                [OPEN] ─┤ 6  GP4 ADC_VREF 34├─ [OPEN]
-                [OPEN] ─┤ 7  GP5     GP28 34├─ YEL (Pedal 3 Signal / Una Corda Soft)
-                [OPEN] ─┤ 8  GND      GND 33├─ GRN (Power Rail GND)
-                [OPEN] ─┤ 9  GP6     GP27 32├─ YEL (Pedal 2 Signal / Sostenuto Hold)
-                [OPEN] ─┤ 10 GP7     GP26 31├─ YEL (Pedal 1 Signal / Damper Sustain)
-                [OPEN] ─┤ 11 GP8      RUN 30├─ [OPEN]
-                [OPEN] ─┤ 12 GP9     GP22 29├─ [OPEN]
-                [OPEN] ─┤ 13 GND      GND 28├─ GRN (Pedal 3 GND / Una Corda Soft)*
-                [OPEN] ─┤ 14 GP10    GP21 27├─ [OPEN]
-                [OPEN] ─┤ 15 GP11    GP20 26├─ [OPEN]
-                [OPEN] ─┤ 16 GP12    GP19 25├─ [OPEN]
-                [OPEN] ─┤ 17 GP13    GP18 24├─ [OPEN]
-    (Switch GND)   BRN ─┤ 18 GND      GND 23├─ [OPEN]
-    xSwitch Line)  ORG ─┤ 19 GP14    GP17 22├─ [OPEN]
-                [OPEN] ─┤ 20 GP15    GP16 21├─ [OPEN]
-                        └───────────────────┘
-                               BOTTOM
+														TOP / USB PORT
+												┌───────────────────┐
+				(LCD Data) YEL ─┤ 1  GP0     VBUS 40├─ GRN (LCD Backlight 5V)
+			 (LCD Clock) BLU ─┤ 2  GP1     VSYS 39├─ [OPEN]d
+		 (Encoder GND) YEL ─┤ 3  GND      GND 38├─ PUR (LCD Backlight GND)
+		 (Encoder CLK) GRN ─┤ 4  GP2   3V3_EN 37├─ [OPEN]
+			(Encoder DT) RED ─┤ 5  GP3  3V3_OUT 36├─ ORG (Power Rail 3.3V)
+								[OPEN] ─┤ 6  GP4 ADC_VREF 34├─ [OPEN]
+								[OPEN] ─┤ 7  GP5     GP28 34├─ YEL (Pedal 3 Signal / Una Corda Soft)
+								[OPEN] ─┤ 8  GND      GND 33├─ GRN (Power Rail GND)
+								[OPEN] ─┤ 9  GP6     GP27 32├─ YEL (Pedal 2 Signal / Sostenuto Hold)
+								[OPEN] ─┤ 10 GP7     GP26 31├─ YEL (Pedal 1 Signal / Damper Sustain)
+								[OPEN] ─┤ 11 GP8      RUN 30├─ [OPEN]
+								[OPEN] ─┤ 12 GP9     GP22 29├─ [OPEN]
+								[OPEN] ─┤ 13 GND      GND 28├─ GRN (Pedal 3 GND / Una Corda Soft)*
+								[OPEN] ─┤ 14 GP10    GP21 27├─ [OPEN]
+								[OPEN] ─┤ 15 GP11    GP20 26├─ [OPEN]
+								[OPEN] ─┤ 16 GP12    GP19 25├─ [OPEN]
+								[OPEN] ─┤ 17 GP13    GP18 24├─ [OPEN]
+		(Switch GND)   BRN ─┤ 18 GND      GND 23├─ [OPEN]
+		xSwitch Line)  ORG ─┤ 19 GP14    GP17 22├─ [OPEN]
+								[OPEN] ─┤ 20 GP15    GP16 21├─ [OPEN]
+												└───────────────────┘
+															 BOTTOM
 
 ##Encoder Wiring
 
-    Enc. side                   Switch side
-	
-		  [ ]                         [ ]
-		|-----|                     |-----|
-		| ||| |                     | | | |
-			|||                       	| |
-			||-- GRN - CLK > PIN 4    	| -- ORG - LINE > PIN 19
-			|--- YEL - GND > PIN 3    	|
-			---- RED - DT  > PIN 5    	---- BRN - GND  > PIN 18
+						Enc. side                   Switch side
+						
+											┌───────────────┐
+		(Pico pin 5) RED ─┤ 1 DT   LINE 5 ├─ ORG (Pico pin 19)
+		(Pico pin 3) YEL ─┤ 2 GND         │
+		(Pico pin 4) GRN ─┤ 3 CLK   GND 4 ├─ BRN (Pico pin 18)
+											└───────────────┘
 
 ##Screen Wiring
 
