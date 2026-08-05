@@ -12,6 +12,6 @@
       │ Performance Logic      │
       └────────────────────────┘
           ▲              │
-          │              ▼
-  LCD + Encoder      USB MIDI Device
+          │              ▼ 
+    LCD+ENCODER      USB MIDI Device
       (UI)           (Host Computer)
