@@ -1,0 +1,6 @@
+Bias P-P (peak to peak)
+SID uses 12v for audio and 5v for logic (dont bother running it faster than 1mhz)
+use smoothing circuit as per c64/128 diagram - output voltage ~-2.5/+2.5v
+use 3.3v pico logic, to drive a 1Mhz square wave at Phi2 on the sid
+put data and address on the bus before the rising edge
+assert /CS and R//W within a few dozen ns after the edge
