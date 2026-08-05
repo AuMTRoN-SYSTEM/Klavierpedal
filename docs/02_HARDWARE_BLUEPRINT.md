@@ -1,8 +1,8 @@
-# Treadle — Hardware Blueprint
+# Klavierpedal — Hardware Blueprint
 
 ## Controller
 
-The Treadle is built around a Raspberry Pi Pico 2 W microcontroller.
+Klavierpedal is built around a Raspberry Pi Pico 2 W microcontroller.
 
 The Pico 2 W is responsible for:
 
@@ -12,8 +12,7 @@ The Pico 2 W is responsible for:
 - Generating MIDI messages over USB (planned).
 - Hosting future performance features such as presets, envelopes and LFOs.
 
-The current prototype is assembled using DuPont point-to-point wiring and
-a small breadboard power strip.
+The design is assembled using DuPont point-to-point wiring and a small breadboard power strip.
 
 ## Pinout Diagram
 
@@ -42,12 +41,6 @@ a small breadboard power strip.
                      └───────────────────┘
                             BOTTOM
                         
-> **Note**
->
-> The pedal ground wiring shown above is known to be slightly inaccurate.
-> The prototype used a single star-ground connection distributed via the breadboard power rail.
-> This diagram will be updated after the wiring is verified.
-
 ##Encoder Wiring##    
 
 Enc. side                   Switch side

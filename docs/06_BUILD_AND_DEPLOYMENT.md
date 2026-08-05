@@ -1,4 +1,4 @@
-# Treadle — Build and Deployment
+# Klavierpedal — Build and Deployment
 
 ## Hardware
 
@@ -23,7 +23,7 @@ Required libraries:
 ## Build Procedure
 
 1. Open:
-   - `firmware/Treadle/Treadle.ino`
+   - `firmware/Klavierpedal/Klavierpedal.ino`
 2. *DISABLE* serial monitor if active. (Causes problems with firmware upload)
 3. Compile/Verify.
 4. Upload firmware.

@@ -1,4 +1,4 @@
-# Treadle — System Overview
+# Klavierpedal — System Overview
 
           Roland RPU-3
          (3 Analogue Pedals)

@@ -1,4 +1,4 @@
-# Treadle — Software Architecture
+# Klavierpedal — Software Architecture
 
 1. Design Philosophy
 
