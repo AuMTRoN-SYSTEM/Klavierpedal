@@ -1,1 +1,1 @@
-# Klavierpedal — User Guide
+# Klavierpedal - User Guide

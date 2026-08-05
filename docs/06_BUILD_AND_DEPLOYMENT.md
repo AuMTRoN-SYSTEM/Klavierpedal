@@ -1,42 +1,27 @@
 # Klavierpedal — Build and Deployment
 
 ## Hardware
-
-Target:
-- RP2350 board
-
-Current board package:
-- RPI Pico2w
+ 
+- Target: RP2350 board
+- Current board package: RPI Pico2w
 
 ---
 
 ## Development Environment
 
-IDE:
-- Arduino IDE 2.3.10
-
-Required libraries:
-- None currently or planned
+- IDE: Arduino IDE 2.3.10
+- Required libraries: None currently or planned
 
 ---
 
-## Build Procedure
+## Build and Upload Procedure
 
-1. Open:
-   - `firmware/Klavierpedal/Klavierpedal.ino`
-3. Compile/Verify.
-4. Upload firmware.
-
-(3 & 4 can be accomplished by CTRL+U or clicking the 2nd arrow icon in IDE)
-
----
-
-## Upload Procedure
-
-1. Connect RP2350 board via USB.
-2. *DISABLE* serial monitor if active. (Causes problems with firmware upload)
-3. Upload using Arduino IDE.
-4. Confirm successful deployment.
+- Open `firmware/Klavierpedal/Klavierpedal.ino`.
+- Connect RP2350 board via USB.
+- *DISABLE* serial monitor if active. (Causes problems with firmware upload)
+- Compile/Verify.
+- Upload firmware via Arduino IDE. (One-step process with Compile step, by default)
+- Confirm successful deployment.
 
 ---
 
@@ -47,22 +32,11 @@ Required libraries:
 
 ## Environment Snapshot
 
-Date:
-2026-08-04
-
 Known working configuration:
 
-Arduino IDE:
-2.3.10
-
-Board:
-rpipico2w
-
-Board core:
-rp2040 (Earl Philhower's arduino-pico)
-
-OS:
-Win10 x64
-
-Compiler:
-pqt-gcc\\5.0.0-9576866
+- Date: 2026-08-04
+- Arduino IDE: 2.3.10
+- Board: rpipico2w
+- Board core: rp2040 (Earl Philhower's arduino-pico)
+- OS: Win10 x64
+- Compiler: pqt-gcc\\5.0.0-9576866
