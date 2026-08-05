@@ -41,7 +41,7 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
                         └───────────────────┘
                                BOTTOM
 
-##Encoder Wiring
+## Encoder Wiring
 
             Enc. side                   Switch side
             
@@ -51,7 +51,7 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
     (Pico pin 4) GRN ─┤ 3 CLK   GND 4 ├─ BRN (Pico pin 18)
                       └───────────────┘
 
-##Screen Wiring
+## Screen Wiring
 
     Uses 4 pin header connector.
 
@@ -60,7 +60,7 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
     BLU - LCD Data > PIN 1
     YEL - LCD Clock > PIN 2
   
-##Hardware Inventory
+## Hardware Inventory
 
     HW-01: Raspberry Pi Pico 2 W (Main Controller).
     HW-02: Waveshare RGB1602 LCD I2C Character Display (Text at 0x3E, RGB at 0x60).
@@ -73,10 +73,10 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
     HW-09: Panel-Mount USB Extender (Chassis strain relief link).
     HW-10: Small plastic enclosure.
 
-##Pending Workspace Acquisitions
+## Pending Workspace Acquisitions
 
     PD-01: Standard Breakaway Male Pin Headers (Logged for future circuit coupling builds)
 
-##Known Hardware Notes
+## Known Hardware Notes
 
 There is a short circuit problem with the jacks I selected for the project. They are switched (normally-closed), which is not the type I should have bought. See KNOWN_ISSUES.md. :)
