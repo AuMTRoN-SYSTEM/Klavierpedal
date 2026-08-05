@@ -17,56 +17,56 @@ However, the firmware has a secondary function. It can host other "Modules"; sel
 
 ## System Components
 
-	Pedal Manager
-	    Reads ADC values
+- Pedal Manager
+    Reads ADC values
 
-	Calibration
-	    Converts raw ADC to calibrated position
+- Calibration
+    Converts raw ADC to calibrated position
 
-	MIDI Engine
-	    Produces MIDI events
+- MIDI Engine
+    Produces MIDI events
 
-	Display Manager
-	    LCD updates
+- Display Manager
+    LCD updates
 
-	Input Manager
-	    Encoder and switch
+- Input Manager
+    Encoder and switch
 
-	Settings Manager
-	    Presets
+- Settings Manager
+    Presets
 
-	Application
-	    Coordinates everything
+- Application
+    Coordinates everything
 
 ## Main Execution Loop
 
-	Initialise
-	    ▼
-	Read pedals
-	    ▼
-	Read encoder
-	    ▼
-	Update UI
-	    ▼
-	Generate MIDI
-	    ▼
-	Repeat
-
+    Initialise
+         ↓
+    Read pedals
+         ↓
+    Read encoder
+         ↓
+     Update UI
+         ↓
+    Generate MIDI
+         ↓
+      Repeat
+  
 ## Data Flow
 
-	 ADC
-		↓
-		Raw Values
-		↓
-		Calibration
-		↓
-		Normalised Values
-		↓
-		Processing
-		↓
-		MIDI Messages
-		↓
-		USB
+          ADC
+           ↓
+       Raw Values
+           ↓
+      Calibration
+           ↓
+    Normalised Values
+           ↓
+       Processing
+           ↓
+      MIDI Messages
+           ↓
+          USB
 
 ## Configuration
 
@@ -76,5 +76,5 @@ However, the firmware has a secondary function. It can host other "Modules"; sel
 
 ## Future Expansion
 
-	Presets
-	Alternate controller modes
+- Presets
+- Alternate controller modes
