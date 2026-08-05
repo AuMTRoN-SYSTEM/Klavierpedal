@@ -43,8 +43,6 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
 
 ## Encoder Wiring
 
-            Enc. side                   Switch side
-            
                       ┌───────────────┐
     (Pico PIN 5) RED ─┤ 1 DT   LINE 5 ├─ ORG (Pico PIN 19)
     (Pico PIN 3) YEL ─┤ 2 GND         │
@@ -53,7 +51,7 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
 
 ## Screen Wiring
 
-    Uses 4 PIN header connector.
+Uses 4 PIN header connector.
 
                        ┌────────
     (Pico PIN 40) GRN ─┤ 1 VCC  
