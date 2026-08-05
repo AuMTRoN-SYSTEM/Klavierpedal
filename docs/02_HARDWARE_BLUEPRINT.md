@@ -18,9 +18,9 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
 
                             TOP / USB PORT
                         ┌───────────────────┐
-        (LCD Data) YEL ─┤ 1  GP0     VBUS 40├─ GRN (LCD Backlight 5V)
-       (LCD Clock) BLU ─┤ 2  GP1     VSYS 39├─
-     (Encoder GND) YEL ─┤ 3  GND      GND 38├─ PUR (LCD Backlight GND)
+         (LCD SDA) YEL ─┤ 1  GP0     VBUS 40├─ GRN (LCD VCC (5V))
+         (LCD SCL) BLU ─┤ 2  GP1     VSYS 39├─
+     (Encoder GND) YEL ─┤ 3  GND      GND 38├─ PUR (LCD GND)
      (Encoder CLK) GRN ─┤ 4  GP2   3V3_EN 37├─
       (Encoder DT) RED ─┤ 5  GP3  3V3_OUT 36├─ ORG (Power Rail 3.3V)
                        ─┤ 6  GP4 ADC_VREF 34├─
@@ -46,20 +46,22 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
             Enc. side                   Switch side
             
                       ┌───────────────┐
-    (Pico pin 5) RED ─┤ 1 DT   LINE 5 ├─ ORG (Pico pin 19)
-    (Pico pin 3) YEL ─┤ 2 GND         │
-    (Pico pin 4) GRN ─┤ 3 CLK   GND 4 ├─ BRN (Pico pin 18)
+    (Pico PIN 5) RED ─┤ 1 DT   LINE 5 ├─ ORG (Pico PIN 19)
+    (Pico PIN 3) YEL ─┤ 2 GND         │
+    (Pico PIN 4) GRN ─┤ 3 CLK   GND 4 ├─ BRN (Pico PIN 18)
                       └───────────────┘
 
 ## Screen Wiring
 
-    Uses 4 pin header connector.
+    Uses 4 PIN header connector.
 
-    GRN - 5v power > PIN 40
-    PUR - GND > PIN 38
-    BLU - LCD Data > PIN 1
-    YEL - LCD Clock > PIN 2
-  
+                       ┌────────
+    (Pico PIN 40) GRN ─┤ 1 VCC  
+    (Pico PIN 38) PUR ─┤ 2 GND  
+     (Pico PIN 2) BLU ─┤ 3 SCL  
+     (Pico PIN 1) YEL ─┤ 4 SDA  
+                       └────────
+
 ## Hardware Inventory
 
     HW-01: Raspberry Pi Pico 2 W (Main Controller).
@@ -75,7 +77,7 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
 
 ## Pending Workspace Acquisitions
 
-    PD-01: Standard Breakaway Male Pin Headers (Logged for future circuit coupling builds)
+    PD-01: Standard Breakaway Male pin Headers (Logged for future circuit coupling builds)
 
 ## Known Hardware Notes
 
