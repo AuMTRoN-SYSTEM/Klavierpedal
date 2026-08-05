@@ -24,13 +24,13 @@ The design is assembled using DuPont point-to-point wiring and a small breadboar
      (Encoder CLK) GRN ─┤ 4  GP2   3V3_EN 37├─
       (Encoder DT) RED ─┤ 5  GP3  3V3_OUT 36├─ ORG (Power Rail 3.3V)
                        ─┤ 6  GP4 ADC_VREF 34├─
-                       ─┤ 7  GP5     GP28 34├─ YEL (Pedal 3 Signal / Una Corda Soft)
+                       ─┤ 7  GP5     GP28 34├─ YEL (Pedal 1 Signal / Una Corda Soft)
                        ─┤ 8  GND      GND 33├─ GRN (Power Rail GND)
                        ─┤ 9  GP6     GP27 32├─ YEL (Pedal 2 Signal / Sostenuto Hold)
-                       ─┤ 10 GP7     GP26 31├─ YEL (Pedal 1 Signal / Damper Sustain)
+                       ─┤ 10 GP7     GP26 31├─ YEL (Pedal 3 Signal / Damper Sustain)
                        ─┤ 11 GP8      RUN 30├─
                        ─┤ 12 GP9     GP22 29├─
-                       ─┤ 13 GND      GND 28├─ GRN (Pedal 3 GND / Una Corda Soft)*
+                       ─┤ 13 GND      GND 28├─ 
                        ─┤ 14 GP10    GP21 27├─
                        ─┤ 15 GP11    GP20 26├─
                        ─┤ 16 GP12    GP19 25├─
@@ -60,22 +60,54 @@ Uses 4 PIN header connector.
      (Pico PIN 1) YEL ─┤ 4 SDA  
                        └────────
 
+## Jack Wiring
+
+Left (Una Corda Soft)
+
+                           ┌────────── 
+        (Pico PIN 31) YEL ─┤ 1 TIP     
+    (Power Rail 3.3v) ORG ─┤ 2 RING    
+     (Power Rail GND) YEL ─┤ 3 SLEEVE  
+                           └────────── 
+
+Middle (Sostenuto Hold)
+
+                           ┌────────── 
+        (Pico PIN 32) YEL ─┤ 1 TIP     
+    (Power Rail 3.3v) ORG ─┤ 2 RING    
+     (Power Rail GND) YEL ─┤ 3 SLEEVE  
+                           └────────── 
+
+Right (Damper Sustain)
+
+                           ┌────────── 
+        (Pico PIN 34) YEL ─┤ 1 TIP     
+    (Power Rail 3.3v) ORG ─┤ 2 RING    
+     (Power Rail GND) YEL ─┤ 3 SLEEVE  
+                           └────────── 
+
+## Power Rail Wiring
+                       ┌───────────┐ 
+    (Pico PIN 36) ORG ─┤ + 3.3V    ├─ OUT TO PEDAL JACKS
+    (Pico PIN 33) GRN ─┤ - GND     ├─ OUT TO PEDAL JACKS
+                       └───────────┘ 
+
 ## Hardware Inventory
 
     HW-01: Raspberry Pi Pico 2 W (Main Controller).
     HW-02: Waveshare RGB1602 LCD I2C Character Display (Text at 0x3E, RGB at 0x60).
-    HW-03: Continuous Rotary Encoder Parameter Dial
+    HW-03: Continuous Rotary Encoder Parameter Dial.
     HW-04: Shaft Push-Button Interrupt Switch (Built into encoder center-click).
     HW-05: 6.35mm Jack Socket 1 (Right Pedal / Damper Sustain).
     HW-06: 6.35mm Jack Socket 2 (Middle Pedal / Sostenuto Hold).
     HW-07: 6.35mm Jack Socket 3 (Left Pedal / Una Corda Soft).
-    HW-08: Several DuPont wires
-    HW-09: Panel-Mount USB Extender (Chassis strain relief link).
+    HW-08: Several DuPont wires.
+    HW-09: Panel-Mount USB Extender.
     HW-10: Small plastic enclosure.
 
 ## Pending Workspace Acquisitions
 
-    PD-01: Standard Breakaway Male pin Headers (Logged for future circuit coupling builds)
+    PD-01: Standard Breakaway Male pin Headers (Logged for future circuit coupling builds).
 
 ## Known Hardware Notes
 
