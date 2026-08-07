@@ -105,10 +105,6 @@ Right (Damper Sustain)
     HW-09: Panel-Mount USB Extender.
     HW-10: Small plastic enclosure.
 
-## Pending Workspace Acquisitions
-
-    PD-01: Standard Breakaway Male pin Headers (Logged for future circuit coupling builds).
-
 ## Known Hardware Notes
 
 There is a short circuit problem with the jacks I selected for the project. They are switched (normally-closed), which is not the type I should have bought. See KNOWN_ISSUES.md. :)
