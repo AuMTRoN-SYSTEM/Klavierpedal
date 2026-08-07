@@ -9,3 +9,5 @@ Klavierpedal allows the use of the RPU-3 as a standalone instrument with its own
 Planned features include presets, calibration tools, and flexible MIDI mapping.
 
 This repository is currently focused on architecture, documentation, and firmware development.
+
+<img src="/hardware/photos/2_top.JPG" width="50%">
