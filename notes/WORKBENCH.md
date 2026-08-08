@@ -7,6 +7,8 @@
     TL-03: Wire strip/cutters    | 1
     TL-04: Solder sucker         | 1
     TL-05: Logic analyzer        | 1
+    TL-06: Glue gun              | 1
+    TL-07: Dymo label gun        | 1
 
 ## Consumables
 
@@ -15,6 +17,8 @@
     CN-03: Flux pen              | 3
     CN-04: Brass tip cleaner     | 3
     CN-05: IPA (99%)             | 1 * 500ml
+    CN-06: Glue sticks           | 18
+    CN-07: Dymo label rolls      | 7
 
 ## Stocked Build Hardware
 
@@ -46,8 +50,8 @@
 
     PT-01: Tweezers              | £5
     PT-02: Needle-nose pliers    | £8–10
-
-## Pending Build Hardware Acquisitions
+    
+    PC-01: 630mA fuses (LOL)
 
     PH-01: Standard Breakaway Male pin Headers
     PH-02: More Pico2w's
