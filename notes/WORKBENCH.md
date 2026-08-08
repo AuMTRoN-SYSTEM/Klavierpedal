@@ -59,4 +59,6 @@
     PH-04: Capacitors
     PH-05: Diodes
     PH-06: Transistors
+    PH-07: 28 pin SID sockets * 2
     
+    PH-xx: 
