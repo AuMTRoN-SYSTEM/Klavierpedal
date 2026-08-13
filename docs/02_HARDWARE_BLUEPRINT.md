@@ -94,16 +94,16 @@ Right (Damper Sustain)
 
 ## Hardware Inventory
 
-    HW-01: Raspberry Pi Pico 2 W (Main Controller).
-    HW-02: Waveshare RGB1602 LCD I2C Character Display (Text at 0x3E, RGB at 0x60).
-    HW-03: Continuous Rotary Encoder Parameter Dial.
-    HW-04: Shaft Push-Button Interrupt Switch (Built into encoder center-click).
-    HW-05: 6.35mm Jack Socket 1 (Right Pedal / Damper Sustain).
-    HW-06: 6.35mm Jack Socket 2 (Middle Pedal / Sostenuto Hold).
-    HW-07: 6.35mm Jack Socket 3 (Left Pedal / Una Corda Soft).
-    HW-08: Several DuPont wires.
-    HW-09: Panel-Mount USB Extender.
-    HW-10: Small plastic enclosure.
+    KP-01: Raspberry Pi Pico 2 W (Main Controller).
+    KP-02: Waveshare RGB1602 LCD I2C Character Display (Text at 0x3E, RGB at 0x60).
+    KP-03: Continuous Rotary Encoder Parameter Dial.
+    KP-04: Shaft Push-Button Interrupt Switch (Built into encoder center-click).
+    KP-05: 6.35mm Jack Socket 1 (Right Pedal / Damper Sustain).
+    KP-06: 6.35mm Jack Socket 2 (Middle Pedal / Sostenuto Hold).
+    KP-07: 6.35mm Jack Socket 3 (Left Pedal / Una Corda Soft).
+    KP-08: Several DuPont wires.
+    KP-09: Panel-Mount USB Extender.
+    KP-10: Small plastic enclosure.
 
 ## Known Hardware Notes
 
